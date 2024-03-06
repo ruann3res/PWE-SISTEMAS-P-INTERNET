@@ -8,7 +8,7 @@
 - [Pong](https://ruann3res.github.io/PWE-SISTEMAS-P-INTERNET/aulas/aula-03/pagina2.html "Pong")
 - [Meta Tags](https://ruann3res.github.io/PWE-SISTEMAS-P-INTERNET/aulas/aula-04/ "Meta Tags")
 - [Hospedagem](https://ruann3res.github.io/PWE-SISTEMAS-P-INTERNET/aulas/aula-05/ "Hospedagem")
-- [Formatação](https://ruann3res.github.io/PWE-SISTEMAS-P-INTERNET/aulas/aula-05/ "Formatação")
+- [Formatação](https://ruann3res.github.io/PWE-SISTEMAS-P-INTERNET/aulas/aula-06/ "Formatação")
 
 # Link para o codigo das aulas 
 

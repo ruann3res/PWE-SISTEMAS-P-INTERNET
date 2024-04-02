@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Ruan Pablo De Assis Neres">
+<meta name="keywords" content="curso, formulario, html">
+<meta name="description" content="Formulário em HTML">
+<title>Cadastro de Clientes</title>
+</head>
+
+<body>
+
+    <h1>Cadastro de Clientes</h1>
+
+    <p style="color: red;">Todos os campos são de preenchimento obrigatório.</p>
+
+    <form action="#" method="post" id = "cadastro">
+    <fieldset>
+        <legend>Grupo 1: Dados Pessoais</legend>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br>
+        <label for="data_nascimento">Data de Nascimento:</label>
+        <input type="date" id="data_nascimento" name="data_nascimento" required><br>
+        <label>Sexo:</label><br>
+        <input type="radio" id="masculino" name="sexo" value="masculino" required>
+        <label for="masculino">Masculino</label><br>
+        <input type="radio" id="feminino" name="sexo" value="feminino" required>
+        <label for="feminino">Feminino</label><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Grupo 2: Informações de Contato</legend>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="telefone">Telefone Celular:</label>
+        <input type="tel" id="telefone" name="telefone" maxlength="11" required><br>
+        <label for="website">Website Pessoal:</label>
+        <input type="url" id="website" name="website" required><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Grupo 3: Localização</legend>
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" required><br>
+        <label for="numero">Número:</label>
+        <input type="number" id="numero" name="numero" min="1" max="9999" required><br>
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" required><br>
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado" required>
+        <option value="AC">Acre</option>
+        <option value="AL">Alagoas</option>
+        <option value="AP">Amapá</option>
+        <option value="AM">Amazonas</option>
+        <option value="BA">Bahia</option>
+        <option value="CE">Ceará</option>
+        <option value="ES">Espírito Santo</option>
+        <option value="GO">Goiás</option>
+        <option value="MA">Maranhão</option>
+        <option value="MT">Mato Grosso</option>
+        <option value="MS">Mato Grosso do Sul</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="PA">Pará</option>
+        <option value="PB">Paraíba</option>
+        <option value="PR">Paraná</option>
+        <option value="PE">Pernambuco</option>
+        <option value="PI">Piauí</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="RN">Rio Grande do Norte</option>
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="RO">Rondônia</option>
+        <option value="RR">Roraima</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="SP">São Paulo</option>
+        <option value="SE">Sergipe</option>
+        <option value="TO">Tocantins</option>
+        <option value="DF">Distrito Federal</option>
+        </select><br>
+    </fieldset>
+
+    <button type="submit">Cadastrar</button>
+
+    <script>
+        document.getElementById('cadastro').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Cliente Cadastrado com Sucesso');
+            document.getElementById('cadastro').reset();
+        });
+    </script>
+
+    <button type="reset">Limpar</button>
+    </form>
+
+</body>
+</html>
